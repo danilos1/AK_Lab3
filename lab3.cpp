@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 		switch (i) {
 			case 'l':
 				if (!flag[0]) {
-					printf("Argument #%d: List", c);
+					printf("Argument #%d: List", c++);
 					if (optarg != NULL) printf(" = %s", optarg);
 					printf("\n");
 					flag[0] = 1;
@@ -31,13 +31,13 @@ int main(int argc, char *argv[]) {
 				break;
 			case 'f':
 			        if (!flag[1]) {	
-					printf("Argument #%d: Forse\n", c); 
+					printf("Argument #%d: Forse\n", c++); 
 					flag[1] = 1;
 				}
 				break;
 			case 'h': 
 				if (!flag[2]) {
-					printf("Argument #%d: Help\n", c); 
+					printf("Argument #%d: Help\n", c++); 
 					flag[2] = 1;
 				}
 				break;
